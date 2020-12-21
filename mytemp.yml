@@ -2,10 +2,14 @@ parameters:
   test: true
   
 
+jobs:
+- job: Deploy123123
+  steps:
+  - task: DownloadPipelineArti123
+    condition: eq( parameters.test  , true)
+    displayName: Download artifact
+    inputs:
+      artifactName: 'Docs.BlogArchive.Comments.Artifact'
+      path: '$(Build.ArtifactStagingDirectory)'
 
-steps:
-- step: 
-    echo Hello, world!
-    echo 'asdfasdfasdf'
-  condition: eq( ${{ parameters.test }}, true)
-  displayName: 'Run a one-line script'
+ 
