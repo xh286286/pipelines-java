@@ -5,7 +5,7 @@ parameters:
 jobs:
 - job: Deploy123123
   steps:
-  - task: DownloadPipelineArti123
+  - task:  MyTask@2
     condition: eq( parameters.test  , true)
     displayName: Download artifact
     inputs:
