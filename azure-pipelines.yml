@@ -8,9 +8,13 @@ trigger:
 
 pool:
   vmImage: 'ubuntu-latest'
+variables:
+  test: true
+
 
 steps:
 - script: echo Hello, world!
+  condition: eq(variables.test, true)
   displayName: 'Run a one-line script'
 
 - script: |
