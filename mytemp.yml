@@ -1,0 +1,11 @@
+parameters:
+  test: true
+  
+
+
+steps:
+- script: 
+    echo Hello, world!
+    echo 'asdfasdfasdf'
+  condition: eq( parameters.test, true)
+  displayName: 'Run a one-line script'
