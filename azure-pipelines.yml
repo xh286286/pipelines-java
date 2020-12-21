@@ -17,5 +17,5 @@ stages:
 - stage: DeployPPE
   jobs:
   - template: mytemp.yml
-  parameters:
-    sss: true
+    parameters:
+      sss: true
