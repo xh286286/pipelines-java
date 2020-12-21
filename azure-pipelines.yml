@@ -14,6 +14,7 @@ variables:
 
 steps:
 - script: echo Hello, world!
+    echo 'asdfasdfasdf'
   condition: eq(variables.test, true)
   displayName: 'Run a one-line script'
 
