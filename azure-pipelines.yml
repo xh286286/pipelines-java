@@ -12,14 +12,10 @@ variables:
   test: true
 
 
-steps:
-- script: 
-    echo Hello, world!
-    echo 'asdfasdfasdf'
-  condition: eq(variables.test, true)
-  displayName: 'Run a one-line script'
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+stages:
+- stage: DeployPPE
+  jobs:
+  - template: mytemp.yml
+  parameters:
+    sss: true
