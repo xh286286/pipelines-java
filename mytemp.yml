@@ -4,7 +4,7 @@ parameters:
 
 
 steps:
-- script: 
+- step: 
     echo Hello, world!
     echo 'asdfasdfasdf'
   condition: eq( ${{ parameters.test }}, true)
